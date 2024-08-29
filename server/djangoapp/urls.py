@@ -11,8 +11,7 @@ from django.conf import settings
 app_name = 'djangoapp'
 urlpatterns = [
         path(route='login', view=views.login_user, name='login'),
-    #
-    # path for login
+        path('login/', TemplateView.as_view(template_name="index.html")),
     # path(route='login', view=views.login_user, name='login'),
 
     # path for dealer reviews view
